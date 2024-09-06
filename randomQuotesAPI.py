@@ -3,7 +3,7 @@ import os
 
 def get_quote():
   
-    category = 'happiness'
+    category = 'love'
     api_url = 'https://api.api-ninjas.com/v1/quotes?category={}'.format(category)
     api_key = os.environ.get("API_KEY")
     response = requests.get(api_url, headers={'X-Api-Key': api_key})
