@@ -1,5 +1,5 @@
 import requests
-import os
+# import os
 
 def get_quote():
   
