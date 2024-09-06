@@ -1,5 +1,5 @@
 import requests
-# import os
+import os
 
 def get_quote():
   
@@ -10,7 +10,7 @@ def get_quote():
     if response.status_code == requests.codes.ok:
         print(response.text)
     else:
-        print("Error:", response.status_code, response.text)
+    print("Error:", response.status_code, response.text)
     data = response.json()
     quote = data[0]["quote"]
     author = data[0]["author"]
